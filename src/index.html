@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="<%=require('./images/favicon.png')%>" sizes="any"/>
+  <link rel="apple-touch-icon" href="<%=require('./images/favicon.png')%>"/>
+  <title>Jumala</title>
+  <!-- <link rel="stylesheet" href="./pages/index.css"> -->
+</head>
+<body class="page">
+<div class="page__content">
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__logo-container logo-container">
+        <img class="header__logo-image" src="<%=require('./images/logo.png')%>" alt="логотип команды Йумала, сиреневый квадрат с белой стилизованной буквой Й">
+        <span class="header__logo-name">Йумала</span>
+      </div>
+      <div class="header__menu menu">
+        <ul class="header__menu-list menu-list">
+          <li class="header__menu-list-item menu-list-item">
+            <a class="header-menu-list-item-link" href="#0">О нас</a>
+          </li>
+          <li class="header__menu-list-item menu-list-item">
+            <a class="header-menu-list-item-link" href="#0">Наши инструкторы</a>
+          </li>
+          <li class="header__menu-list-item menu-list-item">
+            <a class="header-menu-list-item-link" href="#0">Выбрать тур</a>
+          </li>
+          <li class="header__menu-list-item menu-list-item">
+            <a class="header-menu-list-item-link" href="#0">Отзывы</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__contacts contacts">
+        <a class="header__contacts-link contacts-link" href="#0">
+          <img class="header__contacts-logo contacts-logo" src="<%=require('./images/Telegram.png')%>" alt="логотип телеграма">
+          <span class="header__contacts-text contacts-text">Наш телеграм</span>
+        </a>
+      </div>
+    </div>
+  </header>
+<main class="main">
+    <section class="main__picture">
+      <div class="main__picture-container">
+        <img class="main__picture-image" src="<%=require('./images/Gory.jpg')%>" alt="изображение красивых гор"/>
+      </div>
+    </section>
+    <section class="main__container main__about">
+      <div class="main__about-title-container main__title-container">
+        <h2 class="main__title">
+          О нас
+        </h2>
+      </div>
+      <div class="main__about-text">
+        <p class="main__about-text-wording">
+          Описание того, какие мы классные
+        </p>
+      </div>
+    </section>
+    <section class="main__container main__instructors">
+      <div class="main__instructors-title-container main__title-container">
+        <h2 class="main__title">
+          Наши инструкторы
+        </h2>
+      </div>
+      <div class="main__instructors-container">
+        <div class="main__one-instructor">
+          <img class="main__one-instructor-photo" src="<%=require('./images/Sveta.jpg')%>" alt="Портрет Светы">
+          <span class="main__one-instructor-name">Света</span>
+        </div>
+        <div class="main__one-instructor">
+          <img class="main__one-instructor-photo" src="<%=require('./images/Nikita.jpg')%>" alt="Портрет Никиты">
+          <span class="main__one-instructor-name">Никита</span>
+        </div>
+        <div class="main__one-instructor">
+          <img class="main__one-instructor-photo" src="<%=require('./images/Kakoyto_krasivy.jpg')%>" alt="Портрет какого-то красивого мальчика">
+          <span class="main__one-instructor-name">Какой-то красивый мальчик</span>
+        </div>
+        <div class="main__instructors-certificates">
+          <button class="main__certificates-button">
+            Ознакомиться с сертификатами инструкторов
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="main__container main__tours">
+      <div class="main__tours-title-container main__title-container">
+        <h2 class="main__title">
+          Выбрать тур
+        </h2>
+      </div>
+      <div class="main__tours-container">
+        <ul class="main__tours-list"><!--место для включения картинок по шаблону-->
+        </ul>       
+      </div>
+    </section>
+    <section class="main__container main__feedback">
+      <div class="main__feedback-title-container main__title-container">
+        <h2 class="main__title">
+          Отзывы
+        </h2>
+      </div>
+      <div class="main__carousel">
+        <div class="main__carousel-container">
+          <img class="main__carousel-image" src="<%=require('./images/pohod.jpg')%>" alt="фотография какой-нибудь картинки из похода"/>
+          <button class="main__feedback-arrow">></button><!--нужна картинка стрелки -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__logo-container logo-container">
+        <img class="footer__logo-image" src="<%=require('./images/logo.png')%>" alt="логотип команды Йумала, сиреневый квадрат с белой стилизованной буквой Й">
+      </div>
+      <div class="footer__menu menu">
+        <ul class="footer__menu-list menu-list">
+          <li class="footer__menu-list-item menu-list-item">
+            <a class="footer-menu-list-item-link" href="#0">О нас</a>
+          </li>
+          <li class="footer__menu-list-item menu-list-item">
+            <a class="footer-menu-list-item-link" href="#0">Наши инструкторы</a>
+          </li>
+          <li class="footer__menu-list-item menu-list-item">
+            <a class="footer-menu-list-item-link" href="#0">Выбрать тур</a>
+          </li>
+          <li class="footer__menu-list-item menu-list-item">
+            <a class="footer-menu-list-item-link" href="#0">Отзывы</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__contacts contacts">
+        <a class="footer__contacts-link contacts-link" href="#0">
+          <img class="footer__contacts-logo contacts-logo" src="<%=require('./images/Telegram.png')%>" alt="логотип телеграма">
+        </a>
+      </div>
+    </div>
+  </footer>
+<!-- <div class="popup popup_type_edit">
+    <div class="popup__content">
+      <button type="button" class="popup__close"></button>
+      <h3 class="popup__title">Редактировать профиль</h3>
+      <form class="popup__form" name="edit-profile">
+        <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Имя" required>
+        <input type="text" name="description" class="popup__input popup__input_type_description" placeholder="Занятие" required>
+        <button type="submit" class="button popup__button">Сохранить</button>
+      </form>
+    </div>
+  </div>
+  <div class="popup popup_type_new-card">
+    <div class="popup__content">
+      <button type="button" class="popup__close"></button>
+      <h3 class="popup__title">Новое место</h3>
+      <form class="popup__form" name="new-place">
+        <input type="text" name="place-name" class="popup__input popup__input_type_card-name" placeholder="Название" required>
+        <input type="url" name="link" class="popup__input popup__input_type_url" placeholder="Ссылка на картинку" required>
+        <button type="submit" class="button popup__button">Сохранить</button>
+      </form>
+    </div>
+  </div>
+  <div class="popup popup_type_image">
+    <div class="popup__content popup__content_content_image">
+      <button type="button" class="popup__close"></button>
+      <img src="" alt="" class="popup__image">
+      <p class="popup__caption"></p>
+    </div>
+  </div>
+</div>
+<script src="./scripts/cards.js"></script>
+<script src="./scripts/index.js" defer></script>
+
+<template id="card-template">
+  <li class="places__item card">
+    <img class="card__image" src="" alt="" />
+    <button type="button" class="card__delete-button"></button>
+    <div class="card__description">
+      <h2 class="card__title">
+      </h2>
+      <button type="button" class="card__like-button"></button>
+    </div>
+  </li>
+</template> -->
+</body>
+</html>
