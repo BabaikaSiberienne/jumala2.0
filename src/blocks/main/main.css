@@ -46,7 +46,7 @@
   font-weight: 400;
   line-height: 58px;
   letter-spacing: 0px;
-  text-align: left;
+  text-align: center;
 }
 
 .main__instructors-container {
@@ -222,6 +222,8 @@
   outline: solid, 1px, rgb(101, 0, 102);
   position: relative;
   padding-top: 40px;
+  display: none;
+  background-color: rgb(255, 255, 255, 0.5);
 }
 
 .modal__close {
@@ -266,6 +268,7 @@
 
 .modal__visible {
   margin: auto;
+  display: block;
   visibility: visible;
   position: fixed;
   top: 0;
