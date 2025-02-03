@@ -1,16 +1,4 @@
-@import url(./header.css);
-@import url(./main.css);
-@import url(./footer.css);
-
-.page {
-  display: block;
-  box-sizing: border-box;
-  max-width: 1440px;
-  margin: auto;
-  padding: 0;
-  width: 100%;
-}
-
-button:hover {
-  cursor: pointer;
-}
+@import url(./header/header.css);
+@import url(./main/main.css);
+@import url(./footer/footer.css);
+@import url(./page/page.css)
