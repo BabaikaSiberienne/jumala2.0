@@ -216,6 +216,7 @@
   font-size: 87px;
 }
 
+
 .modal {
   width: 1440px;
   height: 717px;
@@ -280,4 +281,32 @@
 
 .modal__hidden {
   visibility: hidden;
+}
+summary::-webkit-details-marker{display:none;}
+summary::-moz-list-bullet{list-style-type:none;}
+summary::marker{display:none;} 
+summary {
+  display:inline-block;
+  padding: .3em .5em .3em .4em;
+  font-size:1.4em;
+  cursor: pointer;
+}
+summary:before {  
+  content: "";
+  margin-right: .3em;
+}
+details[open] > summary:before {
+  content: "";
+}
+summary ~ * {
+    padding:0 1em 0 1em;
+}
+
+details {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 5.5rem;
+  margin-bottom: .5rem;
+
 }
