@@ -79,6 +79,15 @@
           <img class="main__one-instructor-photo" src="<%=require('./images/Kakoyto_krasivy.jpg')%>" alt="Портрет какого-то красивого мальчика">
           <span class="main__one-instructor-name">Какой-то красивый мальчик</span>
         </div>
+
+        <div class="main__instructors-certificates">
+          <button class="main__certificates-button">
+            <span class="main__certificates-text">
+              Ознакомиться с сертификатами инструкторов
+            </span>
+          </button>
+        </div>
+
         <details>
           <summary>
               <h3 class="main__certificates-button">
@@ -89,6 +98,7 @@
         </details>
         <!-- <div class="main__instructors-certificates">
         </div> -->
+
       </div>
     </section>
     <section class="main__container main__tours" id="tours">
@@ -144,6 +154,27 @@
       </div>
     </div>
   </footer>
+  <div class="modal">
+    <button class="button modal__close">
+      <img class="modal__close-img" src="<%=require('./images/close_button.jpg')%>">
+    </button>
+    <div class="main__certificates-button modal__title-container">
+      <h3 class="main__certificates-text">
+        Наши сертификаты
+      </h3>
+    </div>
+    <div class="modal__main">
+      <div class="modal__pic-container">
+        <img class="modal__pic-img" src="" alt="сертификаты инструкторов"/><!-- нужна картинка сертификатов">-->
+      </div>
+      <div class="modal__pic-container">
+        <img class="modal__pic-img" src="" alt="сертификаты инструкторов"/><!-- нужна картинка сертификатов">-->
+      </div>
+      <div class="modal__pic-container">
+        <img class="modal__pic-img" src="" alt="сертификаты инструкторов"/><!-- нужна картинка сертификатов">-->
+      </div>
+    </div>  
+  </div>
 <!-- <div class="popup popup_type_edit">
     <div class="popup__content">
       <button type="button" class="popup__close"></button>

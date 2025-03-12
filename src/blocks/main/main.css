@@ -41,12 +41,12 @@
 
 .main__about-text-wording {
   color: rgb(255, 255, 255);
-font-family: Inter;
-font-size: 48px;
-font-weight: 400;
-line-height: 58px;
-letter-spacing: 0px;
-text-align: left;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 0px;
+  text-align: center;
 }
 
 .main__instructors-container {
@@ -100,9 +100,13 @@ text-align: left;
   margin: auto;
   border-radius: 45px;
   width: 1194px;
-  height: 99px;
+  height: 90x;
   border: 6px solid rgb(79, 0, 79);
   background-color: rgb(158, 117, 158);
+  display: flex;
+}
+
+.main__certificates-text {
   color: rgb(255, 255, 255);
   font-family: Inter;
   font-size: 48px;
@@ -110,6 +114,8 @@ text-align: left;
   line-height: 58px;
   letter-spacing: 0px;
   text-align: center;
+  margin: auto;
+
 }
 
 .main__tours-container{
@@ -210,6 +216,72 @@ text-align: left;
   font-size: 87px;
 }
 
+
+.modal {
+  width: 1440px;
+  height: 717px;
+  outline: solid, 1px, rgb(101, 0, 102);
+  position: relative;
+  padding-top: 40px;
+  display: none;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.modal__close {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.modal__close-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.modal__title-container {
+  margin-bottom: 80px;
+}
+
+.modal__main {
+  background-color: rgb(196, 196, 196);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 50px 38px;
+  gap: 70px;
+}
+
+.modal__pic-container {
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.modal__pic-img {
+  width: 100%;
+  height: 100%;
+}
+
+.modal__visible {
+  margin: auto;
+  display: block;
+  visibility: visible;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.modal__hidden {
+  visibility: hidden;
+}
 summary::-webkit-details-marker{display:none;}
 summary::-moz-list-bullet{list-style-type:none;}
 summary::marker{display:none;} 
@@ -231,10 +303,10 @@ summary ~ * {
 }
 
 details {
-  display: grid
-;
+  display: grid;
   grid-column-start: 1;
   grid-column-end: 3;
   margin-top: 5.5rem;
   margin-bottom: .5rem;
+
 }
