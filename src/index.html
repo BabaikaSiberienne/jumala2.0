@@ -5,8 +5,8 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" href="<%=require('./images/favicon.png')%>" sizes="any"/>
-  <link rel="apple-touch-icon" href="<%=require('./images/favicon.png')%>"/>
+  <link rel="icon" href="<%=require('./images/icons/favicon.png')%>" sizes="any"/>
+  <link rel="apple-touch-icon" href="<%=require('./images/icons/favicon.png')%>"/>
   <title>Jumala</title>
   <!-- <link rel="stylesheet" href="./pages/index.css"> -->
 </head>
@@ -15,7 +15,7 @@
   <header class="header">
     <div class="header__container container">
       <div class="header__logo-container logo-container">
-        <img class="header__logo-image" src="<%=require('./images/logo.png')%>" alt="логотип команды Йумала, сиреневый квадрат с белой стилизованной буквой Й">
+        <img class="header__logo-image" src="<%=require('./images/icons/logo.png')%>" alt="логотип команды Йумала, сиреневый квадрат с белой стилизованной буквой Й">
         <span class="header__logo-name">Йумала</span>
       </div>
       <div class="header__menu menu">
@@ -36,7 +36,7 @@
       </div>
       <div class="header__contacts contacts">
         <a class="header__contacts-link contacts-link" href="#0">
-          <img class="header__contacts-logo contacts-logo" src="<%=require('./images/Telegram.png')%>" alt="логотип телеграма">
+          <img class="header__contacts-logo contacts-logo" src="<%=require('./images/icons/Telegram.png')%>" alt="логотип телеграма">
           <span class="header__contacts-text contacts-text">Наш телеграм</span>
         </a>
       </div>
@@ -79,6 +79,7 @@
           <img class="main__one-instructor-photo" src="<%=require('./images/Kakoyto_krasivy.jpg')%>" alt="Портрет какого-то красивого мальчика">
           <span class="main__one-instructor-name">Какой-то красивый мальчик</span>
         </div>
+
         <div class="main__instructors-certificates">
           <button class="main__certificates-button">
             <span class="main__certificates-text">
@@ -86,6 +87,18 @@
             </span>
           </button>
         </div>
+
+        <details>
+          <summary>
+              <h3 class="main__certificates-button">
+          Ознакомиться с сертификатами инструкторов
+              </h3>
+          </summary>
+            <img class="certificates_summary" src="<%=require('./images/Frame 27.png')%>"
+        </details>
+        <!-- <div class="main__instructors-certificates">
+        </div> -->
+
       </div>
     </section>
     <section class="main__container main__tours" id="tours">
@@ -116,7 +129,7 @@
   <footer class="footer">
     <div class="footer__container container">
       <div class="footer__logo-container logo-container">
-        <img class="footer__logo-image" src="<%=require('./images/logo.png')%>" alt="логотип команды Йумала, сиреневый квадрат с белой стилизованной буквой Й">
+        <img class="footer__logo-image" src="<%=require('./images/icons/logo.png')%>" alt="логотип команды Йумала, сиреневый квадрат с белой стилизованной буквой Й">
       </div>
       <div class="footer__menu menu">
         <ul class="footer__menu-list menu-list">
@@ -136,7 +149,7 @@
       </div>
       <div class="footer__contacts contacts">
         <a class="footer__contacts-link contacts-link" href="#0">
-          <img class="footer__contacts-logo contacts-logo" src="<%=require('./images/Telegram.png')%>" alt="логотип телеграма">
+          <img class="footer__contacts-logo contacts-logo" src="<%=require('./images/icons/Telegram.png')%>" alt="логотип телеграма">
         </a>
       </div>
     </div>
@@ -194,17 +207,13 @@
 </div>
 <script src="./scripts/cards.js"></script>
 <script src="./scripts/index.js" defer></script>
-
-<template id="card-template">
-  <li class="places__item card">
-    <img class="card__image" src="" alt="" />
-    <button type="button" class="card__delete-button"></button>
-    <div class="card__description">
-      <h2 class="card__title">
-      </h2>
-      <button type="button" class="card__like-button"></button>
-    </div>
-  </li>
-</template> -->
-</body>
+-->
+<template id="main__tour-template">   <!-- шаблон для картинки-->
+  <li class="main__one-tour">         <!--нужно ли делать всю картинку кликабельной?-->
+    <img class="main__tours-logo" src="<%=require('./images/icons/logo.png')%>" alt="логотип команды Йумала, сиреневый квадрат с белой стилизованной буквой Й"/>
+    <img class="main__tour-image" src="" alt=""/>
+    <h3 class="main__tour-name">Приключение на 20 минут</h3>
+    <button class="main__tour-arrow">></button><!--нужна картинка стрелки -->
+  </li>  
+</template></body>
 </html>
