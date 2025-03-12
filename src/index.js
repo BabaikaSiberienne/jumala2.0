@@ -1,13 +1,13 @@
 
 import './pages/index.css'
-import { 
+import {
     openModal,
     onClose,
-  } from './components/modals';
+} from './components/modals';
 
 //переменные
 //кнопка показа сертификатов
-const certificatesButton = document.querySelector('.main__certificates-button');   
+const certificatesButton = document.querySelector('.main__certificates-button');
 //модалка с сертификатами
 const certificateModal = document.querySelector('.modal');
 //кнопка закрытия
