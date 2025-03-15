@@ -105,9 +105,6 @@
   display: flex;
 }
 
-.main__certificates-button_text {
-  
-}
 .main__certificates-text {
   color: rgb(255, 255, 255);
   font-family: Inter;
@@ -137,7 +134,9 @@
   height: 542px;
   border-radius: 15px;
   position: relative;
+  overflow: hidden;
 }
+
 
 .main__tours-logo{
   position: absolute;
@@ -145,17 +144,23 @@
   height: 70px;
   top: 57px;
   left: 57px;
-  z-index: 3;
+  z-index: 5;
 }
 
 .main__tour-image{
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   border-radius: 15px;
   object-fit: cover;
   object-position: center;
   display: block;
+}
 
+.main__tour-image:hover {
+  cursor: pointer;
 }
 
 .main__tour-name {
@@ -171,7 +176,6 @@
   text-align: left;
   text-shadow: 1px 1px 1px #000;
   -webkit-text-stroke: #000;
-  z-index: 3;
 }
 
 .main__tour-arrow{
@@ -179,7 +183,6 @@
   position: absolute;
   top: 243px;
   right: 0;
-  z-index: 3;
   background-color: transparent;
   border: none;
   outline: none;
@@ -218,6 +221,38 @@
   font-size: 87px;
 }
 
+.rareside {
+  background-color: rgb(158, 117, 158);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 15px;
+  transition: transform 1s;
+}
+
+.rareside:hover {
+  cursor: pointer;
+}
+.hidden {
+  transform: translateY(100%);
+}
+
+.visible {
+  transform: translateY(0);
+}
+
+.rareside__text {
+  position: absolute;
+  left: 15px;
+  top: 150px;
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0px;
+  text-shadow: 1px 1px 1px #000;
+  -webkit-text-stroke: #000;
+}
 
 .modal {
   width: 1440px;
