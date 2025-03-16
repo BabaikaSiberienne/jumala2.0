@@ -23,6 +23,8 @@ const tourContainer = document.querySelector('.main__tours-list');
 //одна картинка из шаблона
 let tourCard = tourTemplate.querySelector('.main__one-tour');
 
+// const rareCard = ]
+
 //функции
 //открытие модалки с сертификатами
 function openCertModal() {
@@ -44,16 +46,35 @@ closeButton.addEventListener('click', closeCertModal);
 function showTour(data) {
     const tourItem = tourCard.cloneNode(true)
     const tourItemImage = tourItem.querySelector('.main__tour-image');
-    console.log(tourItemImage)
+    const tourItemTitle = tourItem.querySelector('.main__tour-name');
+    const rareCard = tourItem.querySelector('.rareside');
+
+    tourItemTitle.textContent = data.title
     tourItemImage.src = data.link;
     tourItemImage.alt = data.alt;
     
-    const tourItemTitle = tourItem.querySelector('.main__tour-name');
-    console.log(tourItemTitle)
-    tourItemTitle.textContent = data.title
-    console.log(tourItem)
+    tourItemImage.addEventListener('click', function () {
+        turnTour(rareCard)
+    })
+
+    rareCard.addEventListener('click', function() {
+        turnBackTour(rareCard)
+    })
+
     tourCard = tourItem
     return tourCard 
+}
+
+//кнопка поворота страницы туда
+function turnTour (item) {
+    item.classList.remove('hidden')
+    item.classList.add('visible');
+}
+
+//кнопка поворота страницы обратно
+function turnBackTour(item) {
+    item.classList.remove('visible')
+    item.classList.add('hidden')
 }
 
 cardsFirstPages.forEach(function(item) {

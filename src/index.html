@@ -97,7 +97,7 @@
       </div>
       <div class="main__tours-container">
         <ul class="main__tours-list"><!--место для включения картинок по шаблону-->
-          
+
         </ul>       
       </div>
     </section>
@@ -197,11 +197,18 @@
 <script src="./scripts/index.js" defer></script>
 -->
 <template id="main__tour-template">   <!-- шаблон для картинки-->
-  <li class="main__one-tour">         <!--нужно ли делать всю картинку кликабельной?-->
+  <li class="main__one-tour">
+             <!--нужно ли делать всю картинку кликабельной?-->
     <img class="main__tours-logo" src="<%=require('./images/icons/logo.png')%>" alt="логотип команды Йумала, сиреневый квадрат с белой стилизованной буквой Й"/>
     <img class="main__tour-image" src="" alt=""/>
     <h3 class="main__tour-name">Приключение на 20 минут</h3>
     <button class="main__tour-arrow">></button><!--нужна картинка стрелки -->
+    <div class="rareside hidden">
+      <img class="rareside__image" src="" alt=""/>
+      <p class="rareside__text">
+        описание тура
+      </p>
+    </div>
   </li>  
 </template></body>
 </html>
