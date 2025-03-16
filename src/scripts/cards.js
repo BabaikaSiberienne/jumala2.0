@@ -1,7 +1,7 @@
-// export const initialCards = [
+// export const Tours = [
 //     {
-//       name: "Архыз",
-//       link: "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg",
+//       name: "Приключение за 20 минут 1",
+//       link: "юю.",
 //     },
 //     {
 //       name: "Челябинская область",
