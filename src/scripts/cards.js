@@ -45,22 +45,26 @@ const cardsFirstPages = [
     {
         title: "Лайт",
         alt: "деревня, закат",
-        link: `${lite_1}`
+        link: `${lite_1}`,
+        id: 'cardsLite'
     },
     {
         title: "Приключение на 20 минут",
         alt: "горы",
-        link: `${pn20min_1}`
+        link: `${pn20min_1}`,
+        id: 'cards20minut'
     },
     {
         title: "Галопом по хибинам",
         alt: "горная река, закат",
-        link: `${galpohib_1}`
+        link: `${galpohib_1}`,
+        id: 'cardsGalopom'
     },
     {
         title: "Ознакомительный",
         alt: "горы",
-        link: `${ozn_1}`
+        link: `${ozn_1}`,
+        id: 'cardsWelcome'
     }
 ]
 
@@ -75,6 +79,11 @@ const cardsLite = [
         title: "Лайт",
         alt: "равнина в горах",
         link: `${lite_3}`
+    }, 
+    {
+        title: "Лайт",
+        alt: "равнина в горах",
+        link: `${lite_1}`
     }
 ]
 
@@ -90,6 +99,11 @@ const cards20minut = [
         alt: "люди идут в гору",
         link: `${pn20min_3}`
     },
+    {
+        title: "Приключение на 20 минут",
+        alt: "люди идут в гору",
+        link: `${pn20min_1}`
+    }
 ]
 
 const cardsGalopom = [
@@ -103,10 +117,15 @@ const cardsGalopom = [
         title: "Галопом по хибинам",
         alt: "горная река в долине",
         link: `${galpohib_3}`
+    },
+    {
+        title: "Галопом по хибинам",
+        alt: "горная река в долине",
+        link: `${galpohib_1}`
     }
 ]
 
-const cardWelcome = [
+const cardsWelcome = [
 
 
     {
@@ -119,6 +138,11 @@ const cardWelcome = [
         alt: "горная река",
         link: `${ozn_3}`
     },
+    {
+        title: "Ознакомительный",
+        alt: "горная река",
+        link: `${ozn_1}`
+    }
 ]
 
-export {cardsFirstPages, cards20minut, cardsGalopom, cardWelcome, cardsLite}
+export {cardsFirstPages, cards20minut, cardsGalopom, cardsWelcome, cardsLite}

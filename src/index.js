@@ -4,7 +4,7 @@ import {
     openModal,
     onClose,
 } from './components/modals';
-import { cardsFirstPages } from './scripts/cards.js'
+import { cardsFirstPages, cardsLite, cards20minut, cardsGalopom, cardsWelcome } from './scripts/cards.js'
 
 //переменные
 //кнопка показа сертификатов
@@ -48,7 +48,10 @@ function showTour(data) {
     const tourItemImage = tourItem.querySelector('.main__tour-image');
     const tourItemTitle = tourItem.querySelector('.main__tour-name');
     const rareCard = tourItem.querySelector('.rareside');
+    const arrowButt = tourItem.querySelector('.main__tour-arrow')
 
+    tourItemImage.id = `${data.id}1`
+    arrowButt.id = data.id
     tourItemTitle.textContent = data.title
     tourItemImage.src = data.link;
     tourItemImage.alt = data.alt;
@@ -82,10 +85,43 @@ cardsFirstPages.forEach(function(item) {
     tourContainer.prepend(tourCard);
 })
 
-// @todo: DOM узлы
+// @todo: Галерея картинок маршрута
+const tourButtons = Array.from(document.querySelectorAll('.main__tour-arrow'));
+tourButtons.forEach((button) => {
+    let i = 0;
+    let cards = [];
+    let image;
 
-// @todo: Функция создания карточки
+    switch (button.id) {
+        case 'cardsLite':
+            cards = cardsLite;
+            image = document.getElementById('cardsLite1');
+            break;
+        case 'cards20minut':
+            cards = cards20minut;
+            image = document.getElementById('cards20minut1');
+            break;
+        case 'cardsGalopom':
+            cards = cardsGalopom;
+            image = document.getElementById('cardsGalopom1');
+            break;
+        case 'cardsWelcome':
+            cards = cardsWelcome;
+            image = document.getElementById('cardsWelcome1');
+            break;
+    }
 
-// @todo: Функция удаления карточки
-
-// @todo: Вывести карточки на страницу
+    button.addEventListener('click', () => {
+        if (i < 3) {
+            image.src = cards[i].link;
+            image.alt = cards[i].alt;
+            i += 1;
+        } else {
+            // Сбрасываем индекс и показываем первое изображение снова
+            i = 0; // Сбрасываем индекс
+            image.src = cards[i].link; // Показываем первое изображение
+            image.alt = cards[i].alt; // Устанавливаем alt
+            i += 1; // Увеличиваем индекс для следующего клика
+        }
+    });
+});
